@@ -4,13 +4,15 @@ import { ConfigService } from '@nestjs/config';
 import helmet from 'helmet';
 import { NestExpressApplication } from '@nestjs/platform-express';
 import { join } from 'path';
-import { VersioningType } from '@nestjs/common';
+import { ValidationPipe, VersioningType } from '@nestjs/common';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 
 async function bootstrap() {
   const app = await NestFactory.create<NestExpressApplication>(AppModule);
   //config Config Service:
   const configService = app.get(ConfigService);
+  //config pipes:
+  app.useGlobalPipes(new ValidationPipe());
   //config helmet:
   app.use(helmet());
 
