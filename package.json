@@ -24,12 +24,15 @@
     "@nestjs/common": "^10.0.0",
     "@nestjs/config": "^3.2.3",
     "@nestjs/core": "^10.0.0",
+    "@nestjs/mongoose": "^10.0.10",
     "@nestjs/platform-express": "^10.0.0",
     "@nestjs/swagger": "^7.4.2",
     "@nestjs/throttler": "^6.2.1",
     "helmet": "^8.0.0",
+    "mongoose": "^8.7.2",
     "reflect-metadata": "^0.2.0",
-    "rxjs": "^7.8.1"
+    "rxjs": "^7.8.1",
+    "soft-delete-plugin-mongoose": "1.0.15"
   },
   "devDependencies": {
     "@nestjs/cli": "^10.0.0",
