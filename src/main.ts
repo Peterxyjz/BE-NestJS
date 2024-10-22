@@ -35,7 +35,7 @@ async function bootstrap() {
   app.setGlobalPrefix('api');
   app.enableVersioning({
     type: VersioningType.URI,
-    defaultVersion: ['1', '2'], //v1, v2
+    defaultVersion: ['1'], //v1, v2
   });
 
   //config Swagger:
